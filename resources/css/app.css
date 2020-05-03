@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@tailwind screens;
+
+body {
+    @apply flex justify-center;
+}
+
+#app {
+    max-width: 320px;
+}
+
+
+@screen md {
+    #app {
+        max-width: 540px;
+    }
+}
