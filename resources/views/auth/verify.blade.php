@@ -6,7 +6,9 @@
             <div class="w-full max-w-sm">
 
                 @if (session('resent'))
-                    <div class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100  px-3 py-4 mb-4" role="alert">
+                    <div
+                        class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100  px-3 py-4 mb-4"
+                        role="alert">
                         {{ __('A fresh verification link has been sent to your email address.') }}
                     </div>
                 @endif
@@ -22,10 +24,13 @@
                         </p>
 
                         <p class="leading-normal mt-6">
-                            {{ __('If you did not receive the email') }}, <a class="text-blue-500 hover:text-blue-700 no-underline" onclick="event.preventDefault(); document.getElementById('resend-verification-form').submit();">{{ __('click here to request another') }}</a>.
+                            {{ __('If you did not receive the email') }}, <a
+                                class="text-blue-500 hover:text-blue-700 no-underline"
+                                onclick="event.preventDefault(); document.getElementById('resend-verification-form').submit();">{{ __('click here to request another') }}</a>.
                         </p>
 
-                        <form id="resend-verification-form" method="POST" action="{{ route('verification.resend') }}" class="hidden">
+                        <form id="resend-verification-form" method="POST" action="{{ route('verification.resend') }}"
+                              class="hidden">
                             @csrf
                         </form>
                     </div>

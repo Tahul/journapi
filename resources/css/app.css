@@ -14,9 +14,54 @@ body {
     max-width: 320px;
 }
 
+/**
+BOXES
+ */
+.box {
+    @apply flex flex-col break-words bg-white border-4 border-indigo-400 rounded-lg shadow-md;
+}
 
-@screen md {
-    #app {
-        max-width: 540px;
-    }
+.box .box-header {
+    @apply font-bold bg-indigo-400 text-white py-3 px-6 mb-0;
+}
+
+/*
+FORMS
+ */
+.form-field {
+    @apply flex flex-wrap mb-6;
+}
+
+.form-field input[type="text"], input[type="email"], input[type="password"] {
+    @apply w-full;
+}
+
+.form-field input.error {
+    @apply border-red-400;
+}
+
+.form-field label {
+    @apply block text-gray-800 text-sm font-bold mb-2;
+}
+
+.form-field p {
+    @apply text-red-400 text-xs italic mt-2;
+}
+
+/*
+BUTTONS
+ */
+.button {
+    @apply transition-colors duration-100 inline-block align-middle text-center select-none border font-bold whitespace-no-wrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-blue-400;
+}
+
+.button:hover {
+    @apply bg-blue-800;
+}
+
+/*
+ALERTS
+ */
+.alert {
+    @apply text-sm border-4 rounded text-green-600 border-green-400 bg-green-100 px-6 py-4 mb-6;
 }
