@@ -13,38 +13,27 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" data-turbolinks-track="true" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100 w-full h-screen antialiased leading-none">
 <div id="app" class="w-full">
-    <nav class="mb-8 py-4">
-        <div class="flex items-center justify-center">
-            <div class="mr-6">
-                <a href="{{ url('/') }}" class="text-lg font-semibold no-underline">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-            </div>
+    <nav class="mb-4 py-4">
+        <div class="flex items-center justify-between">
+            <a href="{{ url('/') }}" class="text-lg font-bold text-gray-700">
+                {{ config('app.name', 'Laravel') }}
+            </a>
 
-            <div class="flex-1 text-right">
+            <div>
                 @guest
-                    <a class="no-underline hover:underline text-sm p-3"
-                       href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="text-sm" href="{{ route('login') }}">{{ __('Login') }}</a>
+
                     @if (Route::has('register'))
-                        <a class="no-underline hover:underline text-sm p-3"
-                           href="{{ route('register') }}">{{ __('Register') }}</a>
+                        <a class="text-sm" href="{{ route('register') }}">{{ __('Register') }}</a>
                     @endif
                 @else
-                    <span class="text-sm pr-4">{{ Auth::user()->name }}</span>
-
-                    <a href="{{ route('logout') }}"
-                       class="no-underline hover:underline text-sm p-3"
-                       onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-                        {{ csrf_field() }}
-                    </form>
+                    <a class="text-sm pr-3" href="{{ route('home') }}">My journal</a>
+                    <a class="text-sm" href="{{ route('settings') }}">Settings</a>
                 @endguest
             </div>
         </div>

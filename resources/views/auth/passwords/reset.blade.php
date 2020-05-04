@@ -6,7 +6,7 @@
             {{ __('Reset password') }}
         </div>
 
-        <form class="w-full p-6" method="POST" action="{{ route('password.update') }}">
+        <form class="box-inside" method="POST" action="{{ route('password.update') }}">
             @csrf
 
             <input type="hidden" name="token" value="{{ $token }}">
@@ -19,7 +19,7 @@
                 <input
                     id="email"
                     type="email"
-                    class="form-input w-full @error('email') border-red-500 @enderror"
+                    class="form-input w-full @error('email') error @enderror"
                     name="email"
                     value="{{ $email ?? old('email') }}"
                     required
@@ -42,7 +42,7 @@
                 <input
                     id="password"
                     type="password"
-                    class="form-input w-full @error('password') border-red-500 @enderror"
+                    class="form-input w-full @error('password') error @enderror"
                     name="password"
                     required
                     autocomplete="new-password"

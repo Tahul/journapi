@@ -11,16 +11,13 @@
         @endif
 
         <div class="box">
+
             <div class="box-header">
-                My journal
+                Settings
             </div>
 
             <div class="box-inside">
-                <p>
-                    Hello {{ Auth()->user()->name }}! 👋
-                </p>
-
-                <p class="mt-6">How was your day today?</p>
+                <!-- TODO: SETTINGS -->
             </div>
         </div>
     </div>

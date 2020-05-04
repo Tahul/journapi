@@ -6,7 +6,7 @@
             {{ __('Register') }}
         </div>
 
-        <form class="w-full p-6" method="POST" action="{{ route('register') }}">
+        <form class="box-inside" method="POST" action="{{ route('register') }}">
             @csrf
 
             <div class="form-field"> <!-- Name -->
@@ -95,9 +95,9 @@
                     {{ __('Register') }}
                 </button>
 
-                <p class="w-full text-xs text-center text-gray-700 mt-6 -mb-3">
+                <p class="w-full text-xs text-center mt-6 -mb-3">
                     {{ __('Already have an account?') }}
-                    <a class="text-blue-500 hover:text-blue-700 no-underline" href="{{ route('login') }}">
+                    <a href="{{ route('login') }}">
                         {{ __('Login') }}
                     </a>
                 </p>

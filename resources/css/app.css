@@ -1,3 +1,6 @@
+/*
+IMPORTS
+ */
 @tailwind base;
 
 @tailwind components;
@@ -6,6 +9,30 @@
 
 @tailwind screens;
 
+/*
+FONTS
+ */
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    @apply text-gray-700;
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'JetBrains Mono';
+}
+
+/*
+BASE
+ */
 body {
     @apply flex justify-center;
 }
@@ -14,15 +41,27 @@ body {
     max-width: 320px;
 }
 
-/**
+a {
+    @apply transition-colors duration-100 ease-in text-blue-500;
+
+    &:hover {
+        @apply text-blue-700;
+    }
+}
+
+/*
 BOXES
  */
 .box {
-    @apply flex flex-col break-words bg-white border-4 border-indigo-400 rounded-lg shadow-md;
-}
+    @apply relative flex flex-col break-words bg-white border-4 border-indigo-400 rounded-lg shadow-md;
 
-.box .box-header {
-    @apply font-bold bg-indigo-400 text-white py-3 px-6 mb-0;
+    & .box-header {
+        @apply font-bold bg-indigo-400 text-white py-3 px-3 mb-0;
+    }
+
+    & .box-inside {
+        @apply w-full py-6 px-3;
+    }
 }
 
 /*
@@ -30,22 +69,22 @@ FORMS
  */
 .form-field {
     @apply flex flex-wrap mb-6;
-}
 
-.form-field input[type="text"], input[type="email"], input[type="password"] {
-    @apply w-full;
-}
+    & label {
+        @apply block text-gray-800 text-sm font-bold mb-2;
+    }
 
-.form-field input.error {
-    @apply border-red-400;
-}
+    & input[type="text"], input[type="email"], input[type="password"] {
+        @apply w-full;
+    }
 
-.form-field label {
-    @apply block text-gray-800 text-sm font-bold mb-2;
-}
+    & input.error {
+        @apply border-red-400;
+    }
 
-.form-field p {
-    @apply text-red-400 text-xs italic mt-2;
+    & p {
+        @apply text-red-400 text-xs italic mt-2;
+    }
 }
 
 /*
@@ -53,10 +92,10 @@ BUTTONS
  */
 .button {
     @apply transition-colors duration-100 inline-block align-middle text-center select-none border font-bold whitespace-no-wrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-blue-400;
-}
 
-.button:hover {
-    @apply bg-blue-800;
+    &:hover {
+        @apply bg-blue-800;
+    }
 }
 
 /*

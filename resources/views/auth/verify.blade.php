@@ -4,7 +4,6 @@
     <div class="container mx-auto">
         <div class="flex flex-wrap justify-center">
             <div class="w-full max-w-sm">
-
                 @if (session('resent'))
                     <div
                         class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100  px-3 py-4 mb-4"

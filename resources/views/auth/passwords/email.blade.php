@@ -15,7 +15,7 @@
             {{ __('Reset password') }}
         </div>
 
-        <form class="w-full p-6" method="POST" action="{{ route('password.email') }}">
+        <form class="box-inside" method="POST" action="{{ route('password.email') }}">
             @csrf
 
             <div class="form-field"> <!-- Email -->
@@ -49,8 +49,8 @@
                     {{ __('Send password reset link') }}
                 </button>
 
-                <p class="w-full text-xs text-center text-gray-700 mt-8 -mb-4">
-                    <a class="text-blue-500 hover:text-blue-700 no-underline" href="{{ route('login') }}">
+                <p class="w-full text-xs text-center mt-8 -mb-4">
+                    <a href="{{ route('login') }}">
                         {{ __('Back to login') }}
                     </a>
                 </p>

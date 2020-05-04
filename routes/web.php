@@ -22,3 +22,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/settings', 'AccountController@settings')->name('settings');

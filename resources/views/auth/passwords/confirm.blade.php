@@ -2,12 +2,11 @@
 
 @section('content')
     <div class="box">
-
         <div class="box-header">
             {{ __('Confirm Password') }}
         </div>
 
-        <form class="w-full p-6" method="POST" action="{{ route('password.confirm') }}">
+        <form class="box-inside" method="POST" action="{{ route('password.confirm') }}">
             @csrf
 
             <p class="leading-normal">
@@ -15,12 +14,12 @@
             </p>
 
             <div class="flex flex-wrap my-6">
-                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">
+                <label for="password" class="block text-sm font-bold mb-2">
                     {{ __('Password') }}:
                 </label>
 
                 <input id="password" type="password"
-                       class="form-input w-full @error('password') border-red-500 @enderror" name="password" required
+                       class="form-input w-full @error('password') error @enderror" name="password" required
                        autocomplete="new-password">
 
                 @error('password')
@@ -31,8 +30,7 @@
             </div>
 
             <div class="flex flex-wrap items-center">
-                <button type="submit"
-                        class="bg-blue-500 hover:bg-blue-700 text-gray-100 font-bold  py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                <button type="submit" class="button">
                     {{ __('Confirm Password') }}
                 </button>
 
