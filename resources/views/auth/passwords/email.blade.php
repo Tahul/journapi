@@ -49,7 +49,7 @@
                     {{ __('Send password reset link') }}
                 </button>
 
-                <p class="w-full text-xs text-center mt-8 -mb-4">
+                <p class="w-full text-xs text-center mt-6 -mb-3">
                     <a href="{{ route('login') }}">
                         {{ __('Back to login') }}
                     </a>

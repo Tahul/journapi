@@ -82,7 +82,7 @@
                 @endif
 
                 @if (Route::has('register'))
-                    <p class="w-full text-xs text-center mt-8 -mb-4">
+                    <p class="w-full text-xs text-center mt-6 -mb-3">
                         {{ __("Don't have an account?") }}
 
                         <a
