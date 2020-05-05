@@ -24,6 +24,7 @@
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.1.2",
+        "alpinejs": "^2.3.3",
         "laravel-mix-postcss-config": "^1.0.4",
         "postcss-import": "^12.0.1",
         "postcss-nested": "^4.2.1",

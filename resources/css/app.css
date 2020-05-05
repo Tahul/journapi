@@ -78,7 +78,7 @@ FORMS
         @apply w-full;
     }
 
-    & input.error {
+    & textarea.error, input.error {
         @apply border-red-400;
     }
 
@@ -102,5 +102,13 @@ BUTTONS
 ALERTS
  */
 .alert {
-    @apply text-sm border-4 rounded text-green-600 border-green-400 bg-green-100 px-6 py-4 mb-6;
+    @apply text-sm border-4 rounded px-6 py-4 mb-6;
+
+    &.success {
+        @apply text-green-600 border-green-400 bg-green-100;
+    }
+
+    &.error {
+        @apply text-red-600 bg-red-100 border-red-400;
+    }
 }

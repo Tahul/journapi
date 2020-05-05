@@ -17,7 +17,7 @@
             </div>
 
             <div class="box-inside">
-                <!-- TODO: SETTINGS -->
+                {{ $token }}
             </div>
         </div>
     </div>

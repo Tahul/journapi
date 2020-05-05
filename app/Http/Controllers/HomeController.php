@@ -8,13 +8,13 @@ use Illuminate\Http\Response;
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
+     * Show the application dashboard.
      *
-     * @return void
+     * @return Response
      */
-    public function __construct()
+    public function landing()
     {
-        $this->middleware('auth');
+        return view('welcome');
     }
 
     /**
@@ -22,8 +22,12 @@ class HomeController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        return view('home', [
+            'bullets' => $request->user()->bullets->groupBy(function ($item) {
+                return $item->created_at->format('d M y');
+            })
+        ]);
     }
 }

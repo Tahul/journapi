@@ -14,6 +14,8 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" data-turbolinks-track="true" rel="stylesheet">
+
+    <livewire:styles/>
 </head>
 
 <body class="bg-gray-100 w-full h-screen antialiased leading-none">
@@ -40,6 +42,8 @@
     </nav>
 
     @yield('content')
+
+    <livewire:scripts/>
 </div>
 </body>
 </html>
