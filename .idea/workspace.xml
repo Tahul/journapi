@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/chevron.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/alert.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +181,7 @@
       <workItem from="1588584547646" duration="13248000" />
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
-      <workItem from="1588769630766" duration="2845000" />
+      <workItem from="1588769630766" duration="4381000" />
     </task>
     <servers />
   </component>
@@ -231,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="871" y="448" key="FileChooserDialogImpl/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588687969390" />
-    <state x="461" y="239" key="SettingsEditor" timestamp="1588787869201">
+    <state x="461" y="239" key="SettingsEditor" timestamp="1588799311296">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588787869201" />
+    <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588799311296" />
     <state x="841" y="451" key="cloudConfig.SelfSettingsDialog" timestamp="1588769575234">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -255,9 +248,9 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588768756390" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588788563632">
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588799394022">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588788563632" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588799394022" />
   </component>
 </project>

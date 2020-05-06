@@ -93327,6 +93327,10 @@ a:hover {
   color: rgba(43, 108, 176, var(--text-opacity));
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /*
 BOXES
  */
@@ -93360,6 +93364,10 @@ BOXES
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   margin-bottom: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .box .box-inside {
@@ -93486,7 +93494,3 @@ ALERTS
   border-color: #fc8181;
   border-color: rgba(252, 129, 129, var(--border-opacity));
 }
-
-/*
-
- */
