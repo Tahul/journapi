@@ -48,6 +48,6 @@ class User extends Authenticatable
      */
     public function bullets()
     {
-        return $this->hasMany(Bullet::class, 'user_id', 'id');
+        return $this->hasMany(Bullet::class, 'user_id', 'id')->orderBy('created_at', 'DESC');
     }
 }

@@ -1,21 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @if (session('success'))
-        <div
-            class="alert success"
-            role="alert">
-            {{ session('success') }}
-        </div>
-    @endif
-
-    @if (session('error'))
-        <div
-            class="alert error"
-            role="alert">
-            {{ session('error') }}
-        </div>
-    @endif
+    @include('partials.alert')
 
     <div class="box">
         <div class="box-header">
@@ -48,13 +34,34 @@
 
 
     @foreach($bullets as $date => $values)
-        <h3 class="py-2 my-6 w-full bg-gray-400">> {{ $date }}</h3>
+        <div x-data="{ visible: false }">
+            <h3
+                class="p-2 my-6 w-full bg-indigo-400 rounded-lg text-lg bold text-white cursor-pointer flex justify-between items-center"
+                @click="visible = !visible"
+            >
+                {{ $date }}
 
-        @foreach($values as $bullet)
-            <div class="mt-3">
-                <span>> {{ $bullet->created_at->format('h:i:s') }}:</span>
-                {{ $bullet->bullet }}
-            </div>
-        @endforeach
+                <img
+                    class="w-4 h-4 block transform transition-transform duration-100 ease-in"
+                    :class="{ 'rotate-180': visible }" src="/images/chevron.svg"
+                />
+            </h3>
+
+            @foreach($values as $bullet)
+                <div class="mt-6" x-show="visible === true">
+                    <p class="mb-3">
+                        {{ $bullet->bullet }}
+                    </p>
+
+                    <span
+                        class="select-none block w-full mb-3 text-sm text-right"
+                    >
+                        {{ $bullet->created_at->format('h:i:s') }}
+                    </span>
+
+                    <span class="block w-full h-1 bg-gray-400 rounded-full"></span>
+                </div>
+            @endforeach
+        </div>
     @endforeach
 @endsection

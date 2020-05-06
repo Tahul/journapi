@@ -18,6 +18,10 @@
       </option>
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
+    <inspection_tool class="JSUnresolvedFunction" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JSUnresolvedVariable" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myStrictlyCheckProperties" value="false" />
+    </inspection_tool>
     <inspection_tool class="PostCssNesting" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>
 </component>

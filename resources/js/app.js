@@ -1,5 +1,10 @@
-require('./bootstrap');
+/**
+ * Imports
+ */
+const turbolinks = require("turbolinks");
+import 'alpinejs'
 
-const Turbolinks = require("turbolinks");
-
-Turbolinks.start();
+/**
+ * Setup Turbolinks
+ */
+turbolinks.start();
