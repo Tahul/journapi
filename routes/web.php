@@ -14,14 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@landing')->name('landing');
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Auth::routes();
 
 Route::middleware('auth')->group(function () {
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::livewire('/journal', 'account.journal')->layout('layouts.app')->section('content');
 
-    Route::get('/settings', 'AccountController@settings')->name('settings');
+    Route::livewire('/settings', 'account.settings')->layout('layouts.app')->section('content');
 
     Route::post('/bullets', 'BulletController@store')->name('bullet.store');
 });

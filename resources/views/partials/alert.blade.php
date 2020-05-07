@@ -1,5 +1,7 @@
 @if (session('success'))
     <div
+        onClick="removeAlert()"
+        id="alert"
         class="alert success"
         role="alert">
         {{ session('success') }}
@@ -8,6 +10,8 @@
 
 @if (session('error'))
     <div
+        onClick="removeAlert()"
+        id="alert"
         class="alert error"
         role="alert">
         {{ session('error') }}

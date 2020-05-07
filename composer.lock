@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eab189e483f085c5553c7ecda20f218a",
+    "content-hash": "6fa51414ff6859adc338cdf062599b16",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -513,6 +513,59 @@
             "time": "2020-04-28T08:47:37+00:00"
         },
         {
+            "name": "givebutter/laravel-keyable",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/givebutter/laravel-keyable.git",
+                "reference": "fe4e3e38da448532fcee6189f34e18bdddf53525"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/givebutter/laravel-keyable/zipball/fe4e3e38da448532fcee6189f34e18bdddf53525",
+                "reference": "fe4e3e38da448532fcee6189f34e18bdddf53525",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Givebutter\\LaravelKeyable\\KeyableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Givebutter\\LaravelKeyable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Liran Cohen",
+                    "email": "liran@givebutter.com"
+                }
+            ],
+            "description": "Add API keys to your Laravel models",
+            "homepage": "https://github.com/givebutter/laravel-keyable",
+            "keywords": [
+                "api",
+                "api authentication",
+                "api keys",
+                "json",
+                "laravel",
+                "php",
+                "rest"
+            ],
+            "time": "2019-09-19T14:49:17+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.3",
             "source": {
@@ -700,6 +753,60 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "jamesmills/laravel-timezone",
+            "version": "1.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jamesmills/laravel-timezone.git",
+                "reference": "06b9a7cd76002eb4db873c6d77bb46317dd98f20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jamesmills/laravel-timezone/zipball/06b9a7cd76002eb4db873c6d77bb46317dd98f20",
+                "reference": "06b9a7cd76002eb4db873c6d77bb46317dd98f20",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7",
+                "nesbot/carbon": "^1.0 || ^2.0",
+                "php": ">=7.1",
+                "torann/geoip": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JamesMills\\LaravelTimezone\\LaravelTimezoneServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JamesMills\\LaravelTimezone\\": "src/",
+                    "JamesMills\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Mills",
+                    "email": "james@clicksco.com"
+                }
+            ],
+            "description": "Timezone storage and retrieval for Laravel",
+            "keywords": [
+                "laravel",
+                "timezone"
+            ],
+            "time": "2020-04-14T16:27:03+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3681,6 +3788,79 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2019-10-24T08:53:34+00:00"
+        },
+        {
+            "name": "torann/geoip",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Torann/laravel-geoip.git",
+                "reference": "15c7cb3d2edcfbfd7e8cd6f435defc2352df40d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Torann/laravel-geoip/zipball/15c7cb3d2edcfbfd7e8cd6f435defc2352df40d2",
+                "reference": "15c7cb3d2edcfbfd7e8cd6f435defc2352df40d2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0|^7.0",
+                "illuminate/support": "^6.0|^7.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "geoip2/geoip2": "~2.1",
+                "mockery/mockery": "^1.3",
+                "phpunit/phpunit": "^8.0",
+                "vlucas/phpdotenv": "^4.0"
+            },
+            "suggest": {
+                "geoip2/geoip2": "Required to use the MaxMind database or web service with GeoIP (~2.1).",
+                "monolog/monolog": "Allows for storing location not found errors to the log"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Torann\\GeoIP\\GeoIPServiceProvider"
+                    ],
+                    "aliases": {
+                        "GeoIP": "Torann\\GeoIP\\Facades\\GeoIP"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Torann\\GeoIP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Stainback",
+                    "email": "torann@gmail.com"
+                }
+            ],
+            "description": "Support for multiple GeoIP services.",
+            "keywords": [
+                "IP API",
+                "geoip",
+                "geolocation",
+                "infoDB",
+                "laravel",
+                "location",
+                "maxmind"
+            ],
+            "time": "2020-03-10T18:35:08+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

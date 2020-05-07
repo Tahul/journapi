@@ -11,7 +11,9 @@
         "php": "^7.2.5",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
+        "givebutter/laravel-keyable": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "jamesmills/laravel-timezone": "^1.9",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "livewire/livewire": "^1.0"

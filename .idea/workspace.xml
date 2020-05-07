@@ -2,23 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Observers/UserObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mstile-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mstile-310x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mstile-310x310.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mstile-70x70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/Keyable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/keyable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/timezone.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/journapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/journapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_05_122717_add_api_token_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_07_155312_add_timezone_column_to_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/account/settings.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/alert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/alert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +158,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/torann/geoip" />
+      <path value="$PROJECT_DIR$/vendor/jamesmills/laravel-timezone" />
+      <path value="$PROJECT_DIR$/vendor/givebutter/laravel-keyable" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bPckeEKGQ0znXyoDFH7qWlBMJr" />
@@ -162,7 +178,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -195,7 +212,7 @@
       <workItem from="1588584547646" duration="13248000" />
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
-      <workItem from="1588769630766" duration="5250000" />
+      <workItem from="1588769630766" duration="19615000" />
     </task>
     <servers />
   </component>
@@ -210,10 +227,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="866" y="493" key="#Custom_Plugin_Repositories/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588630299809" />
-    <state x="594" y="285" key="#Inspections" timestamp="1588787818669">
+    <state x="594" y="285" key="#Inspections" timestamp="1588867312920">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="594" y="285" key="#Inspections/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588787818669" />
+    <state x="594" y="285" key="#Inspections/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588867312920" />
     <state x="843" y="470" key="#Notifications" timestamp="1588630464616">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -226,14 +243,14 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="704" y="443" width="951" height="482" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588768811124" />
-    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588787728932">
+    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588890669533">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588787728932" />
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588626312817">
+    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588890669533" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588883091627">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588626312817" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588883091627" />
     <state x="813" y="503" key="Create Observer" timestamp="1588799883120">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -242,22 +259,26 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="871" y="448" key="FileChooserDialogImpl/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588687969390" />
-    <state x="461" y="239" key="SettingsEditor" timestamp="1588799311296">
+    <state x="461" y="239" key="SettingsEditor" timestamp="1588866556881">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588799311296" />
+    <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588866556881" />
     <state x="841" y="451" key="cloudConfig.SelfSettingsDialog" timestamp="1588769575234">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="841" y="451" key="cloudConfig.SelfSettingsDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588769575234" />
+    <state x="635" y="221" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588879494778">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="635" y="221" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588879494778" />
     <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588627546294">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588627546294" />
-    <state x="878" y="288" width="846" height="654" key="find.popup" timestamp="1588787687726">
+    <state x="878" y="288" width="921" height="654" key="find.popup" timestamp="1588890688526">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="878" y="288" width="846" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588787687726" />
+    <state x="878" y="288" width="921" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588890688526" />
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup" timestamp="1588585601016">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -266,9 +287,9 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588768756390" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588802646972">
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588883140314">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588802646972" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588883140314" />
   </component>
 </project>

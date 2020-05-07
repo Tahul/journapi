@@ -16,7 +16,7 @@ class AccountController extends Controller
     public function settings(Request $request)
     {
         return view('account.settings', [
-            'token' => request()->user()->api_token
+            'user' => request()->user()
         ]);
     }
 }

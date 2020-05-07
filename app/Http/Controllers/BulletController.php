@@ -49,7 +49,7 @@ class BulletController extends Controller
             $request->session()->flash('error', '❌ Could not save bullet.');
         }
 
-        return redirect('home');
+        return redirect('journal');
     }
 
     /**

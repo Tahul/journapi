@@ -93359,10 +93359,7 @@ BOXES
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding: 0.75rem;
   margin-bottom: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -93456,6 +93453,32 @@ BUTTONS
   background-color: rgba(44, 82, 130, var(--bg-opacity));
 }
 
+.button.green {
+  --bg-opacity: 1;
+  background-color: #68d391;
+  background-color: rgba(104, 211, 145, var(--bg-opacity));
+}
+
+.button.green:hover {
+  --bg-opacity: 1;
+  background-color: #276749;
+  background-color: rgba(39, 103, 73, var(--bg-opacity));
+}
+
+.button.input-action {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-style: none;
+}
+
+.button.input-action.left {
+  border-bottom-right-radius: 0;
+}
+
+.button.input-action.right {
+  border-bottom-left-radius: 0;
+}
+
 /*
 ALERTS
  */
@@ -93469,6 +93492,11 @@ ALERTS
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 .alert.success {
