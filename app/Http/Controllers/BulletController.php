@@ -2,25 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\BulletCreateRequest;
-use App\Http\Requests\BulletUpdateRequest;
 use App\Models\Bullet;
 use Exception;
 use Givebutter\LaravelKeyable\Auth\AuthorizesKeyableRequests;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Validation\ValidationException;
 
 class BulletController extends Controller
 {
     use AuthorizesKeyableRequests;
 
     /**
-     * @param Request $request
+     * Return the whole journal.
+     *
      * @return JsonResponse
      */
-    public function index(Request $request)
+    public function index()
     {
         $user = request()->keyable;
 
@@ -41,25 +40,31 @@ class BulletController extends Controller
     /**
      * Store a newly created bullet in storage.
      *
-     * @param BulletCreateRequest $request
      * @return JsonResponse|RedirectResponse|Response
      */
-    public function store(BulletCreateRequest $request)
+    public function store()
     {
         $bullet = null;
         $message = null;
         $user = request()->keyable;
-        $messages = [
-            'success' => '✅ Bullet saved!',
-            'error' => '❌ Could not save bullet.'
-        ];
+        $messages = Bullet::messages()['create'];
+        $validation = Bullet::validation()['create'];
+
+        try {
+            request()->validate($validation);
+        } catch (ValidationException $e) {
+            return JsonResponse::create([
+                'message' => '❌ The provided data is invalid.',
+                'data' => $e->errors()
+            ], 400);
+        }
 
         try {
             $bullet = Bullet::create([
                 'user_id' => $user->id,
                 'published_at' => now()->timezone($user->timezone),
-                'bullet' => $request->bullet,
-                'urls' => unfurl_string($request->bullet)
+                'bullet' => request()->bullet,
+                'urls' => unfurl_string(request()->bullet)
             ]);
 
             $message = $messages['success'];
@@ -76,19 +81,15 @@ class BulletController extends Controller
     /**
      * Destroy a specified bullet.
      *
-     * @param Request $request
      * @param $id
      * @return JsonResponse|RedirectResponse|Response
      */
-    public function delete(Request $request, $id)
+    public function delete($id)
     {
         $bullet = null;
         $message = null;
         $user = request()->keyable;
-        $messages = [
-            'success' => '✅ Bullet deleted!',
-            'error' => '❌ Could not delete bullet.'
-        ];
+        $messages = Bullet::messages()['delete'];
 
         try {
             $bullet = $user->bullets->find($id);
@@ -113,19 +114,25 @@ class BulletController extends Controller
     /**
      * Update a specified bullet.
      *
-     * @param BulletUpdateRequest $request
      * @param $id
      * @return JsonResponse|RedirectResponse|Response
      */
-    public function update(BulletUpdateRequest $request, $id)
+    public function update($id)
     {
         $bullet = null;
         $message = null;
         $user = request()->keyable;
-        $messages = [
-            'success' => '✅ Bullet updated!',
-            'error' => '❌ Could not update bullet.'
-        ];
+        $messages = Bullet::messages()['update'];
+        $validation = Bullet::validation()['update'];
+
+        try {
+            request()->validate($validation);
+        } catch (ValidationException $e) {
+            return JsonResponse::create([
+                'message' => '❌ The provided data is invalid.',
+                'data' => $e->errors()
+            ], 400);
+        }
 
         try {
             $bullet = $user->bullets->find($id);
@@ -134,14 +141,15 @@ class BulletController extends Controller
                 throw new Exception('bullet_not_found');
             }
 
-            $bullet->bullet = $request->bullet;
+            $bullet->bullet = request()->bullet;
+
+            $bullet->urls = unfurl_string(request()->bullet);
 
             $bullet->save();
 
             $message = $messages['success'];
         } catch (Exception $e) {
             $message = $messages['error'];
-
         }
 
         return JsonResponse::create([

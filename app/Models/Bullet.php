@@ -56,20 +56,25 @@ class Bullet extends Model
                 'error' => '❌ Could not save bullet.'
             ],
             'update' => [
-                'success' => '✅ Bullet deleted!',
-                'error' => '❌ Could not delete bullet.'
-            ],
-            'delete' => [
                 'success' => '✅ Bullet updated!',
                 'error' => '❌ Could not update bullet.'
+            ],
+            'delete' => [
+                'success' => '✅ Bullet deleted!',
+                'error' => '❌ Could not delete bullet.'
             ]
         ];
     }
 
     public static function validation()
     {
-        return collect([
-
-        ]);
+        return [
+            'create' => [
+                'bullet' => 'required'
+            ],
+            'update' => [
+                'bullet' => 'required'
+            ],
+        ];
     }
 }

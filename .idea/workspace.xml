@@ -4,9 +4,10 @@
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ApiFormRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BulletCreateRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BulletUpdateRequest.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Bullet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bullet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +191,7 @@
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
       <workItem from="1588769630766" duration="43615000" />
-      <workItem from="1588963535827" duration="10820000" />
+      <workItem from="1588963535827" duration="12239000" />
     </task>
     <servers />
   </component>
@@ -266,10 +267,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588954943865" />
-    <state x="879" y="302" width="934" height="642" key="find.popup" timestamp="1588965652235">
+    <state x="601" y="66" width="934" height="903" key="find.popup" timestamp="1588976972295">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="879" y="302" width="934" height="642" key="find.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588965652235" />
+    <state x="601" y="66" width="934" height="903" key="find.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588976972295" />
     <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953162225" />
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup" timestamp="1588585601016">
       <screen x="0" y="0" width="1920" height="1200" />
@@ -279,11 +280,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953128582" />
-    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup" timestamp="1588975301338">
+    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup" timestamp="1588976884885">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1057.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1588895706456" />
-    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588975301338" />
+    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588976884885" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588963349883" />
   </component>
 </project>
