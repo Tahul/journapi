@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Observers/BulletObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ApiFormRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BulletCreateRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BulletUpdateRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Bullet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bullet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,7 @@
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
       <workItem from="1588769630766" duration="43615000" />
-      <workItem from="1588963535827" duration="12239000" />
+      <workItem from="1588963535827" duration="13557000" />
     </task>
     <servers />
   </component>
@@ -206,9 +205,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="866" y="493" key="#Custom_Plugin_Repositories/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588630299809" />
-    <state x="594" y="285" key="#Inspections" timestamp="1588867312920">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="594" y="303" key="#Inspections" timestamp="1588977481307">
+      <screen x="0" y="23" width="1920" height="1177" />
     </state>
+    <state x="594" y="303" key="#Inspections/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588977481307" />
     <state x="594" y="285" key="#Inspections/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588867312920" />
     <state x="843" y="470" key="#Notifications" timestamp="1588630464616">
       <screen x="0" y="0" width="1920" height="1200" />
@@ -239,17 +239,19 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="803" y="517" key="Create Form Request/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588907557487" />
-    <state x="813" y="503" key="Create Observer" timestamp="1588799883120">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="813" y="516" key="Create Observer" timestamp="1588977434389">
+      <screen x="0" y="23" width="1920" height="1177" />
     </state>
+    <state x="813" y="516" key="Create Observer/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588977434389" />
     <state x="813" y="503" key="Create Observer/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588799883120" />
     <state x="871" y="448" key="FileChooserDialogImpl" timestamp="1588687969390">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="871" y="448" key="FileChooserDialogImpl/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588687969390" />
-    <state x="461" y="239" key="SettingsEditor" timestamp="1588901345159">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="461" y="257" key="SettingsEditor" timestamp="1588977424945">
+      <screen x="0" y="23" width="1920" height="1177" />
     </state>
+    <state x="461" y="257" key="SettingsEditor/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588977424945" />
     <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588901345159" />
     <state x="811" y="520" key="VCS.ChangelistChooser" timestamp="1588963554766">
       <screen x="0" y="23" width="1920" height="1177" />
@@ -280,11 +282,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953128582" />
-    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup" timestamp="1588976884885">
+    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup" timestamp="1588977497792">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1057.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1588895706456" />
-    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588976884885" />
+    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588977497792" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588963349883" />
   </component>
 </project>

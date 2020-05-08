@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Bullet;
 use App\Models\User;
+use App\Observers\BulletObserver;
 use App\Observers\UserObserver;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,5 +28,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         User::observe(UserObserver::class);
+        Bullet::observe(BulletObserver::class);
     }
 }

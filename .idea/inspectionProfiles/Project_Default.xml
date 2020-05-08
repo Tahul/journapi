@@ -22,6 +22,9 @@
     <inspection_tool class="JSUnresolvedVariable" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myStrictlyCheckProperties" value="false" />
     </inspection_tool>
+    <inspection_tool class="PhpUndefinedFieldInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="NOTIFY_ACCESS_VIA_MAGIC_METHOD" value="false" />
+    </inspection_tool>
     <inspection_tool class="PostCssNesting" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="XmlUnboundNsPrefix" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>

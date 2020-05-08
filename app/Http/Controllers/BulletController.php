@@ -50,6 +50,7 @@ class BulletController extends Controller
         $messages = Bullet::messages()['create'];
         $validation = Bullet::validation()['create'];
 
+        // Validation
         try {
             request()->validate($validation);
         } catch (ValidationException $e) {
@@ -59,12 +60,12 @@ class BulletController extends Controller
             ], 400);
         }
 
+        // Creation
         try {
             $bullet = Bullet::create([
                 'user_id' => $user->id,
                 'published_at' => now()->timezone($user->timezone),
-                'bullet' => request()->bullet,
-                'urls' => unfurl_string(request()->bullet)
+                'bullet' => request()->bullet
             ]);
 
             $message = $messages['success'];
@@ -91,6 +92,7 @@ class BulletController extends Controller
         $user = request()->keyable;
         $messages = Bullet::messages()['delete'];
 
+        // Deletion
         try {
             $bullet = $user->bullets->find($id);
 
@@ -125,6 +127,7 @@ class BulletController extends Controller
         $messages = Bullet::messages()['update'];
         $validation = Bullet::validation()['update'];
 
+        // Validation
         try {
             request()->validate($validation);
         } catch (ValidationException $e) {
@@ -134,6 +137,7 @@ class BulletController extends Controller
             ], 400);
         }
 
+        // Update
         try {
             $bullet = $user->bullets->find($id);
 
@@ -142,8 +146,6 @@ class BulletController extends Controller
             }
 
             $bullet->bullet = request()->bullet;
-
-            $bullet->urls = unfurl_string(request()->bullet);
 
             $bullet->save();
 
