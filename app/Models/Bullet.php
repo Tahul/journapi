@@ -13,7 +13,11 @@ class Bullet extends Model
      * @var array
      */
     protected $fillable = [
-        'bullet', 'user_id'
+        'bullet', 'user_id', 'published_at'
+    ];
+
+    protected $casts = [
+        'published_at' => 'datetime'
     ];
 
     /**
@@ -21,7 +25,8 @@ class Bullet extends Model
      *
      * @return BelongsTo
      */
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo(User::class, 'id', 'user_id');
     }
 }

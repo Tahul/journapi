@@ -3,8 +3,8 @@
 namespace App\Http\Livewire\Account;
 
 use App\Models\Bullet;
+use Carbon\Carbon;
 use Exception;
-use Illuminate\Validation\Rule;
 use Livewire\Component;
 
 class Journal extends Component
@@ -15,7 +15,7 @@ class Journal extends Component
     {
         return view('livewire.account.journal', [
             'bullets' => auth()->user()->bullets->groupBy(function ($item) {
-                return $item->created_at->format('d M y');
+                return $item->published_at->format('d M y');
             })
         ]);
     }
@@ -34,6 +34,7 @@ class Journal extends Component
         try {
             Bullet::create([
                 'user_id' => auth()->user()->id,
+                'published_at' => now()->timezone(auth()->user()->timezone),
                 'bullet' => $bullet
             ]);
 

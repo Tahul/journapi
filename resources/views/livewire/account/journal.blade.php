@@ -44,7 +44,7 @@
 
 
     @foreach($bullets as $date => $values)
-        <div x-data="{ visible: {{ $date === now()->format('d M y') }} === 1 }">
+        <div x-data="{ visible: parseInt('{{ $date === now(auth()->user()->timezone)->format('d M y') }}') === 1 }">
             <h3
                 class="p-3 my-6 w-full bg-indigo-400 rounded-lg font-bold text-white cursor-pointer flex justify-between items-center select-none border-4 border-indigo-400"
                 @click="visible = !visible"
@@ -66,7 +66,7 @@
                     <span
                         class="select-none block w-full mb-3 text-sm text-right"
                     >
-                        @displayDate($bullet->created_at, 'H:i:s')
+                        {{ $bullet->published_at->format('h:i:s') }}
                     </span>
 
                     <span class="block w-full h-1 bg-gray-400 rounded-full"></span>

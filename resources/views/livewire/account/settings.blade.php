@@ -7,7 +7,7 @@
         </div>
 
         <div class="box-inside">
-            <form>
+            <form @submit.prevent>
                 <div class="form-field"> <!-- Name -->
                     <label for="Name">
                         {{ __('Name') }}
@@ -79,6 +79,14 @@
                     </div>
                 </div>
             </form>
+
+            <div class="mb-6">
+                @include('partials.recipes')
+            </div>
+
+            <div>
+                @include('partials.danger-zone')
+            </div>
         </div>
     </div>
 </div>

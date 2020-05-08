@@ -2,36 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/Keyable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/keyable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/timezone.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/journapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/journapi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_05_07_235106_add_utc_to_bullets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/alfred.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/terminal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/danger-zone.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/recipes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_05_122717_add_api_token_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_07_155312_add_timezone_column_to_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/account/settings.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/alert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/alert.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bullet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bullet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/UserObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/UserObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +196,7 @@
       <workItem from="1588584547646" duration="13248000" />
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
-      <workItem from="1588769630766" duration="19615000" />
+      <workItem from="1588769630766" duration="24090000" />
     </task>
     <servers />
   </component>
@@ -275,10 +259,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588627546294" />
-    <state x="878" y="288" width="921" height="654" key="find.popup" timestamp="1588890688526">
+    <state x="878" y="288" width="921" height="654" key="find.popup" timestamp="1588899349865">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="878" y="288" width="921" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588890688526" />
+    <state x="878" y="288" width="921" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588899349865" />
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup" timestamp="1588585601016">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -287,9 +271,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588768756390" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588883140314">
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588899440035">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588883140314" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1057.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1588895706456" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588899440035" />
   </component>
 </project>
