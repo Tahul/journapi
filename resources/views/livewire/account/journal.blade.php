@@ -58,19 +58,7 @@
             </h3>
 
             @foreach($values as $bullet)
-                <div class="mt-6" x-show.transition="visible === true">
-                    <p class="mb-3">
-                        {{ $bullet->bullet }}
-                    </p>
-
-                    <span
-                        class="select-none block w-full mb-3 text-sm text-right"
-                    >
-                        {{ $bullet->published_at->format('h:i:s') }}
-                    </span>
-
-                    <span class="block w-full h-1 bg-gray-400 rounded-full"></span>
-                </div>
+                @include('partials.bullet')
             @endforeach
         </div>
     @endforeach

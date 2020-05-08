@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/published_at.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/bullet.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/chevron.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/chevron.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/recipes.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/recipes.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +188,7 @@
       <workItem from="1588584547646" duration="13248000" />
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
-      <workItem from="1588769630766" duration="25920000" />
+      <workItem from="1588769630766" duration="26845000" />
     </task>
     <servers />
   </component>
