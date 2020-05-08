@@ -1,5 +1,3 @@
-@include('partials.alert')
-
 <div class="pb-6">
     <div class="box" x-data="{ visible: localStorage.getItem('journal-write-visible') === 'true' }">
         <div
@@ -18,7 +16,7 @@
         </div>
 
         <div class="box-inside" x-show.transition="visible">
-            <form action="{{ route('bullet.store') }}" method="POST">
+            <form wire:submit.prevent="submit">
                 @csrf
 
                 <div class="form-field">
@@ -28,6 +26,7 @@
                         id="bullet-input"
                         autofocus
                         rows="3"
+                        wire:model.lazy="bullet"
                     ></textarea>
 
                     @error('bullet')
@@ -153,35 +152,26 @@
                             Edit
                         </button>
 
-                        <form
-                            action="{{ route('bullet.delete', ['id' => $bullet->id]) }}"
-                            method="POST"
-                            x-show="!(editBullet === {{ $bullet->id }})"
-                        > <!-- Delete -->
-                            @csrf
 
-                            <input type="hidden" name="_method" value="DELETE">
-
-                            <button
-                                class="select-none cursor-pointer hover:text-red-400 ease-in duration-100 transition-colors flex items-center"
-                                type="submit"
+                        <button
+                            class="select-none cursor-pointer hover:text-red-400 ease-in duration-100 transition-colors flex items-center"
+                            type="submit"
+                        >
+                            <svg
+                                class="block w-5 h-5 mr-2"
+                                fill="#000000"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                width="32px"
+                                height="32px"
                             >
-                                <svg
-                                    class="block w-5 h-5 mr-2"
-                                    fill="#000000"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 16 16"
-                                    width="32px"
-                                    height="32px"
-                                >
-                                    <path
-                                        d="M 6.496094 1 C 5.675781 1 5 1.675781 5 2.496094 L 5 3 L 2 3 L 2 4 L 3 4 L 3 12.5 C 3 13.324219 3.675781 14 4.5 14 L 10.5 14 C 11.324219 14 12 13.324219 12 12.5 L 12 4 L 13 4 L 13 3 L 10 3 L 10 2.496094 C 10 1.675781 9.324219 1 8.503906 1 Z M 6.496094 2 L 8.503906 2 C 8.785156 2 9 2.214844 9 2.496094 L 9 3 L 6 3 L 6 2.496094 C 6 2.214844 6.214844 2 6.496094 2 Z M 4 4 L 11 4 L 11 12.5 C 11 12.78125 10.78125 13 10.5 13 L 4.5 13 C 4.21875 13 4 12.78125 4 12.5 Z M 5 5 L 5 12 L 6 12 L 6 5 Z M 7 5 L 7 12 L 8 12 L 8 5 Z M 9 5 L 9 12 L 10 12 L 10 5 Z"
-                                    />
-                                </svg>
+                                <path
+                                    d="M 6.496094 1 C 5.675781 1 5 1.675781 5 2.496094 L 5 3 L 2 3 L 2 4 L 3 4 L 3 12.5 C 3 13.324219 3.675781 14 4.5 14 L 10.5 14 C 11.324219 14 12 13.324219 12 12.5 L 12 4 L 13 4 L 13 3 L 10 3 L 10 2.496094 C 10 1.675781 9.324219 1 8.503906 1 Z M 6.496094 2 L 8.503906 2 C 8.785156 2 9 2.214844 9 2.496094 L 9 3 L 6 3 L 6 2.496094 C 6 2.214844 6.214844 2 6.496094 2 Z M 4 4 L 11 4 L 11 12.5 C 11 12.78125 10.78125 13 10.5 13 L 4.5 13 C 4.21875 13 4 12.78125 4 12.5 Z M 5 5 L 5 12 L 6 12 L 6 5 Z M 7 5 L 7 12 L 8 12 L 8 5 Z M 9 5 L 9 12 L 10 12 L 10 5 Z"
+                                />
+                            </svg>
 
-                                Delete
-                            </button>
-                        </form>
+                            Delete
+                        </button>
 
                         <div
                             class="flex items-center block"

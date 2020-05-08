@@ -44,4 +44,32 @@ class Bullet extends Model
     {
         return $this->belongsTo(User::class, 'id', 'user_id');
     }
+
+    /**
+     * Get the model messages for alerts.
+     */
+    public static function messages()
+    {
+        return [
+            'create' => [
+                'success' => '✅ Bullet saved!',
+                'error' => '❌ Could not save bullet.'
+            ],
+            'update' => [
+                'success' => '✅ Bullet deleted!',
+                'error' => '❌ Could not delete bullet.'
+            ],
+            'delete' => [
+                'success' => '✅ Bullet updated!',
+                'error' => '❌ Could not update bullet.'
+            ]
+        ];
+    }
+
+    public static function validation()
+    {
+        return collect([
+
+        ]);
+    }
 }

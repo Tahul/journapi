@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BulletCreateRequest;
 use App\Http\Requests\BulletUpdateRequest;
 use App\Models\Bullet;
 use Exception;
@@ -40,14 +41,14 @@ class BulletController extends Controller
     /**
      * Store a newly created bullet in storage.
      *
-     * @param Request $request
+     * @param BulletCreateRequest $request
      * @return JsonResponse|RedirectResponse|Response
      */
-    public function store(Request $request)
+    public function store(BulletCreateRequest $request)
     {
         $bullet = null;
         $message = null;
-        $user = is_null($request->user()) ? request()->keyable : $request->user();
+        $user = request()->keyable;
         $messages = [
             'success' => '✅ Bullet saved!',
             'error' => '❌ Could not save bullet.'
@@ -61,27 +62,15 @@ class BulletController extends Controller
                 'urls' => unfurl_string($request->bullet)
             ]);
 
-            if (!$request->wantsJson() && $request->hasSession()) {
-                $request->session()->flash('success', $messages['success']);
-            } else {
-                $message = $messages['success'];
-            }
+            $message = $messages['success'];
         } catch (Exception $e) {
-            if (!$request->wantsJson() && $request->hasSession()) {
-                $request->session()->flash('error', $messages['error']);
-            } else {
-                $message = $messages['error'];
-            }
+            $message = $messages['error'];
         }
 
-        if (!$request->wantsJson() && $request->hasSession()) {
-            return redirect()->to('journal');
-        } else {
-            return JsonResponse::create([
-                'message' => $message,
-                'data' => $bullet
-            ]);
-        }
+        return JsonResponse::create([
+            'message' => $message,
+            'data' => $bullet
+        ]);
     }
 
     /**
@@ -95,7 +84,7 @@ class BulletController extends Controller
     {
         $bullet = null;
         $message = null;
-        $user = is_null($request->user()) ? request()->keyable : $request->user();
+        $user = request()->keyable;
         $messages = [
             'success' => '✅ Bullet deleted!',
             'error' => '❌ Could not delete bullet.'
@@ -110,27 +99,15 @@ class BulletController extends Controller
 
             $bullet->delete();
 
-            if (!$request->wantsJson() && $request->hasSession()) {
-                $request->session()->flash('success', $messages['success']);
-            } else {
-                $message = $messages['success'];
-            }
+            $message = $messages['success'];
         } catch (Exception $e) {
-            if (!$request->wantsJson() && $request->hasSession()) {
-                $request->session()->flash('error', $messages['error']);
-            } else {
-                $message = $messages['error'];
-            }
+            $message = $messages['error'];
         }
 
-        if (!$request->wantsJson() && $request->hasSession()) {
-            return redirect()->to('journal');
-        } else {
-            return JsonResponse::create([
-                'message' => $message,
-                'data' => null
-            ]);
-        }
+        return JsonResponse::create([
+            'message' => $message,
+            'data' => null
+        ]);
     }
 
     /**
@@ -144,7 +121,7 @@ class BulletController extends Controller
     {
         $bullet = null;
         $message = null;
-        $user = is_null($request->user()) ? request()->keyable : $request->user();
+        $user = request()->keyable;
         $messages = [
             'success' => '✅ Bullet updated!',
             'error' => '❌ Could not update bullet.'
@@ -161,26 +138,15 @@ class BulletController extends Controller
 
             $bullet->save();
 
-            if (!$request->wantsJson() && $request->hasSession()) {
-                $request->session()->flash('success', $messages['success']);
-            } else {
-                $message = $messages['success'];
-            }
+            $message = $messages['success'];
         } catch (Exception $e) {
-            if (!$request->wantsJson() && $request->hasSession()) {
-                $request->session()->flash('error', $messages['error']);
-            } else {
-                $message = $messages['error'];
-            }
+            $message = $messages['error'];
+
         }
 
-        if (!$request->wantsJson() && $request->hasSession()) {
-            return redirect()->to('journal');
-        } else {
-            return JsonResponse::create([
-                'message' => $message,
-                'data' => $bullet
-            ]);
-        }
+        return JsonResponse::create([
+            'message' => $message,
+            'data' => $bullet
+        ]);
     }
 }
