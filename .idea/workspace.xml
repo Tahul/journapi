@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Helpers/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LandingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ApiFormRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_05_08_192947_add_urls_to_bullets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/document.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/journapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/journapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BulletCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BulletCreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BulletUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BulletUpdateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bullet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bullet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/recipes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/recipes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +149,7 @@
       <path value="$PROJECT_DIR$/vendor/torann/geoip" />
       <path value="$PROJECT_DIR$/vendor/jamesmills/laravel-timezone" />
       <path value="$PROJECT_DIR$/vendor/givebutter/laravel-keyable" />
+      <path value="$PROJECT_DIR$/vendor/shweshi/opengraph" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bPckeEKGQ0znXyoDFH7qWlBMJr" />
@@ -185,7 +202,8 @@
       <workItem from="1588584547646" duration="13248000" />
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
-      <workItem from="1588769630766" duration="33802000" />
+      <workItem from="1588769630766" duration="43615000" />
+      <workItem from="1588963535827" duration="8033000" />
     </task>
     <servers />
   </component>
@@ -216,14 +234,18 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="704" y="443" width="951" height="482" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588768811124" />
+    <state x="48" y="284" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1588965594818">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="48" y="284" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588965594818" />
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588890669533">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588890669533" />
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588883091627">
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588952586533">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588883091627" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588952586533" />
     <state x="803" y="517" key="Create Form Request" timestamp="1588907557487">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -240,6 +262,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588901345159" />
+    <state x="811" y="520" key="VCS.ChangelistChooser" timestamp="1588963554766">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="811" y="520" key="VCS.ChangelistChooser/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588963554766" />
     <state x="841" y="451" key="cloudConfig.SelfSettingsDialog" timestamp="1588769575234">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -248,26 +274,28 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="635" y="221" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588879494778" />
-    <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588627546294">
+    <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588954943865">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588627546294" />
-    <state x="878" y="288" width="921" height="654" key="find.popup" timestamp="1588909183998">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588954943865" />
+    <state x="879" y="302" width="934" height="642" key="find.popup" timestamp="1588965652235">
+      <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="878" y="288" width="921" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588909183998" />
+    <state x="879" y="302" width="934" height="642" key="find.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588965652235" />
+    <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953162225" />
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup" timestamp="1588585601016">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588585601016" />
-    <state x="624" y="284" key="run.anything.popup" timestamp="1588908108497">
+    <state x="624" y="284" key="run.anything.popup" timestamp="1588953128582">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588908108497" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588909955983">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953128582" />
+    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup" timestamp="1588971469199">
+      <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1057.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1588895706456" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588909955983" />
+    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588971469199" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588963349883" />
   </component>
 </project>

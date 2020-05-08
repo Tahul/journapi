@@ -66,7 +66,7 @@
 
                     <div class="flex items-center w-full">
                         <div
-                            class="copy-btn button input-action left w-1/2 flex-1"
+                            class="cursor-pointer copy-btn button input-action left w-1/2 flex-1"
                             data-clipboard-target="#apiKey"
                         >
                             Copy

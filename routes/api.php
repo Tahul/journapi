@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/bullets', 'BulletController@index')->name('api.bullet.index');
+
 Route::post('/bullets', 'BulletController@store')->name('api.bullet.store');
 
-Route::delete('/bullets/{id}', 'BulletController@delete')->name('api.bullet.delete');
+Route::patch('/bullets/{id}', 'BulletController@update')->name('api.bullet.update');
 
 Route::put('/bullets/{id}', 'BulletController@update')->name('api.bullet.update');
+
+Route::delete('/bullets/{id}', 'BulletController@delete')->name('api.bullet.delete');

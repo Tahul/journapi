@@ -13,11 +13,26 @@ class Bullet extends Model
      * @var array
      */
     protected $fillable = [
-        'bullet', 'user_id', 'published_at'
+        'bullet', 'urls', 'user_id', 'published_at'
     ];
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
     protected $casts = [
-        'published_at' => 'datetime'
+        'published_at' => 'datetime',
+        'urls' => 'json'
+    ];
+
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'created_at', 'updated_at', 'user_id'
     ];
 
     /**

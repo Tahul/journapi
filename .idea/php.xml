@@ -110,6 +110,7 @@
       <path value="$PROJECT_DIR$/vendor/torann/geoip" />
       <path value="$PROJECT_DIR$/vendor/jamesmills/laravel-timezone" />
       <path value="$PROJECT_DIR$/vendor/givebutter/laravel-keyable" />
+      <path value="$PROJECT_DIR$/vendor/shweshi/opengraph" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

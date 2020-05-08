@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+// Public routes
 Auth::routes();
 
+Route::get('/', 'LandingController@landing');
+
+// Authenticated routes
 Route::middleware('auth')->group(function () {
     Route::livewire('/journal', 'account.journal')->layout('layouts.app')->section('content');
 
