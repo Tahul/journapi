@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('/bullets', 'BulletController@store')->name('api.bullet.store');
+
+Route::delete('/bullets/{id}', 'BulletController@delete')->name('api.bullet.delete');
+
+Route::put('/bullets/{id}', 'BulletController@update')->name('api.bullet.update');
