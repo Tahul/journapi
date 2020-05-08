@@ -4,6 +4,7 @@
 const turbolinks = require("turbolinks");
 import 'alpinejs'
 import ClipboardJS from "clipboard"
+import './alpine-functions'
 
 /**
  * Setup Turbolinks

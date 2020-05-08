@@ -2826,6 +2826,17 @@ Copyright © 2018 Basecamp, LLC
 
 /***/ }),
 
+/***/ "./resources/js/alpine-functions.js":
+/*!******************************************!*\
+  !*** ./resources/js/alpine-functions.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -2839,10 +2850,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(alpinejs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js");
 /* harmony import */ var clipboard__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(clipboard__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _alpine_functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./alpine-functions */ "./resources/js/alpine-functions.js");
+/* harmony import */ var _alpine_functions__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_alpine_functions__WEBPACK_IMPORTED_MODULE_2__);
 /**
  * Imports
  */
 var turbolinks = __webpack_require__(/*! turbolinks */ "./node_modules/turbolinks/dist/turbolinks.js");
+
 
 
 

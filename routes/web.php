@@ -26,4 +26,8 @@ Route::middleware('auth')->group(function () {
     Route::livewire('/settings', 'account.settings')->layout('layouts.app')->section('content');
 
     Route::post('/bullets', 'BulletController@store')->name('bullet.store');
+
+    Route::delete('/bullets/{id}', 'BulletController@delete')->name('bullet.delete');
+
+    Route::put('/bullets/{id}', 'BulletController@update')->name('bullet.update');
 });
