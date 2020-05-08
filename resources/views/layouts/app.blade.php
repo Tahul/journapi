@@ -60,8 +60,8 @@
                         <a class="text-sm" href="{{ route('register') }}">{{ __('Register') }}</a>
                     @endif
                 @else
-                    <a class="text-sm pr-3" href="/journal">Journal</a>
-                    <a class="text-sm" href="/settings">Settings</a>
+                    <a class="select-none text-sm pr-3" href="/journal">Journal</a>
+                    <a class="select-none text-sm" href="/settings">Settings</a>
                 @endguest
             </div>
         </div>

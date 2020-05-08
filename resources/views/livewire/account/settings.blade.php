@@ -7,49 +7,47 @@
         </div>
 
         <div class="box-inside">
-            <form @submit.prevent>
-                <div class="form-field"> <!-- Name -->
-                    <label for="Name">
-                        {{ __('Name') }}
-                    </label>
+            <div class="form-field"> <!-- Name -->
+                <label for="Name">
+                    {{ __('Name') }}
+                </label>
 
-                    <input
-                        id="name"
-                        type="text"
-                        class="form-input @error('name') error @enderror"
-                        name="name"
-                        value="{{ old('name') }}"
-                        required
-                        autocomplete="name"
-                        autofocus
-                        wire:model.debounce.1000ms="name"
-                    >
+                <input
+                    id="name"
+                    type="text"
+                    class="form-input @error('name') error @enderror"
+                    name="name"
+                    value="{{ old('name') }}"
+                    required
+                    autocomplete="name"
+                    autofocus
+                    wire:model.debounce.1000ms="name"
+                >
 
-                    @error('name')
-                    <p>
-                        {{ $message }}
-                    </p>
-                    @enderror
-                </div>
+                @error('name')
+                <p>
+                    {{ $message }}
+                </p>
+                @enderror
+            </div>
 
-                <div class="form-field"> <!-- Name -->
-                    <label for="timezone">
-                        {{ __('Timezone') }}
-                    </label>
+            <div class="form-field"> <!-- Timezone -->
+                <label for="timezone">
+                    {{ __('Timezone') }}
+                </label>
 
-                    <select class="form-input w-full" name="timezone" id="timezone" wire:model.lazy="timezone">
-                        @foreach($timezones as $zone)
-                            <option value="{{ $zone }}">{{ $zone }}</option>
-                        @endforeach
-                    </select>
+                <select class="form-input w-full" name="timezone" id="timezone" wire:model.lazy="timezone">
+                    @foreach($timezones as $zone)
+                        <option value="{{ $zone }}">{{ $zone }}</option>
+                    @endforeach
+                </select>
 
-                    @error('timezone')
-                    <p>
-                        {{ $message }}
-                    </p>
-                    @enderror
-                </div>
-            </form>
+                @error('timezone')
+                <p>
+                    {{ $message }}
+                </p>
+                @enderror
+            </div>
 
             <form wire:submit.prevent="regenerateApiKey">
                 <div class="form-field">
