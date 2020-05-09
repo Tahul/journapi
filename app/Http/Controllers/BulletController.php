@@ -21,18 +21,39 @@ class BulletController extends Controller
      */
     public function index()
     {
+        $messages = Bullet::messages()['index'];
         $user = request()->keyable;
 
-        if (!is_null($user)) {
+        return JsonResponse::create([
+            'message' => $messages['success'],
+            'data' => $user->bullets->groupBy(function ($item) {
+                return $item->published_at->format('d-m-y');
+            })
+        ]);
+    }
+
+    /**
+     * Return the requested bullet.
+     *
+     * @param $id
+     * @return JsonResponse
+     */
+    public function show($id)
+    {
+        $user = request()->keyable;
+        $messages = Bullet::messages()['index'];
+
+        $bullet = $user->bullets->find($id);
+
+        if (!is_null($bullet)) {
             return JsonResponse::create([
-                'message' => '📓 Here is your entire journal.',
-                'data' => $user->bullets->groupBy(function ($item) {
-                    return $item->published_at->format('d-m-y');
-                })
+                'message' => $messages['success'],
+                'data' => $bullet
             ]);
         } else {
             return JsonResponse::create([
-                'message' => '❌ You need an API key to use this endpoint.'
+                'message' => '❌ Bullet not found.',
+                'data' => null
             ], 400);
         }
     }
@@ -71,6 +92,11 @@ class BulletController extends Controller
             $message = $messages['success'];
         } catch (Exception $e) {
             $message = $messages['error'];
+
+            return JsonResponse::create([
+                'message' => $message,
+                'data' => $bullet
+            ], 400);
         }
 
         return JsonResponse::create([
@@ -105,6 +131,11 @@ class BulletController extends Controller
             $message = $messages['success'];
         } catch (Exception $e) {
             $message = $messages['error'];
+
+            return JsonResponse::create([
+                'message' => $message,
+                'data' => null
+            ], 400);
         }
 
         return JsonResponse::create([
@@ -152,6 +183,11 @@ class BulletController extends Controller
             $message = $messages['success'];
         } catch (Exception $e) {
             $message = $messages['error'];
+
+            return JsonResponse::create([
+                'message' => $message,
+                'data' => null
+            ], 400);
         }
 
         return JsonResponse::create([

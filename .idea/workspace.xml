@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Bullet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/bullet.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/alerts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bullet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bullet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/keyable.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/keyable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/save.svg/icons8-save.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/alert.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/bullet.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/danger-zone.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/danger-zone.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,8 +153,8 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/vendor/torann/geoip" />
       <path value="$PROJECT_DIR$/vendor/jamesmills/laravel-timezone" />
-      <path value="$PROJECT_DIR$/vendor/givebutter/laravel-keyable" />
       <path value="$PROJECT_DIR$/vendor/shweshi/opengraph" />
+      <path value="$PROJECT_DIR$/vendor/givebutter/laravel-keyable" />
     </include_path>
   </component>
   <component name="ProjectId" id="1bPckeEKGQ0znXyoDFH7qWlBMJr" />
@@ -207,7 +210,10 @@
       <workItem from="1588694089547" duration="6268000" />
       <workItem from="1588769630766" duration="43615000" />
       <workItem from="1588963535827" duration="25362000" />
-      <workItem from="1588991033391" duration="6256000" />
+      <workItem from="1588991033391" duration="6562000" />
+      <workItem from="1589032617176" duration="8950000" />
+      <workItem from="1589044386163" duration="6000" />
+      <workItem from="1589044415145" duration="2615000" />
     </task>
     <servers />
   </component>
@@ -243,6 +249,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="48" y="284" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588965594818" />
+    <state x="795" y="288" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589036912964">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="795" y="288" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589036912964" />
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588890669533">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -257,6 +267,10 @@
     </state>
     <state x="748" y="544" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588979708516" />
     <state x="748" y="531" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588993747896" />
+    <state x="842" y="503" key="Create Database Factory" timestamp="1589038106164">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="842" y="503" key="Create Database Factory/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589038106164" />
     <state x="803" y="517" key="Create Form Request" timestamp="1588907557487">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -270,11 +284,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="871" y="448" key="FileChooserDialogImpl/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588687969390" />
-    <state x="461" y="257" key="SettingsEditor" timestamp="1588977424945">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="461" y="239" key="SettingsEditor" timestamp="1589038096035">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="461" y="257" key="SettingsEditor/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588977424945" />
-    <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588901345159" />
+    <state x="461" y="239" key="SettingsEditor/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589038096035" />
     <state x="811" y="520" key="VCS.ChangelistChooser" timestamp="1588963554766">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
@@ -291,24 +305,24 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588954943865" />
-    <state x="879" y="284" width="934" height="654" key="find.popup" timestamp="1588994467557">
+    <state x="879" y="284" width="934" height="654" key="find.popup" timestamp="1589047853471">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="601" y="66" width="934" height="903" key="find.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588990930820" />
-    <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588994467557" />
+    <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589047853471" />
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup" timestamp="1588585601016">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588585601016" />
-    <state x="624" y="284" key="run.anything.popup" timestamp="1588953128582">
+    <state x="624" y="284" width="672" height="677" key="run.anything.popup" timestamp="1589036876091">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953128582" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588996763246">
+    <state x="624" y="284" width="672" height="677" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589036876091" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1589049360002">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1057.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1588895706456" />
     <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588990445994" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588996763246" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589049360002" />
   </component>
 </project>

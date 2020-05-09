@@ -6,7 +6,6 @@ use App\Models\Bullet;
 use App\Policies\KeyablePolicies\BulletPolicy;
 use Givebutter\LaravelKeyable\Facades\Keyable;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {

@@ -28,6 +28,7 @@ FONTS
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: 'JetBrains Mono';
+    line-height: 1.33rem;
 }
 
 /*
@@ -107,6 +108,14 @@ BUTTONS
 
         &:hover {
             @apply bg-green-800;
+        }
+    }
+
+    &.red {
+        @apply bg-red-400;
+
+        &:hover {
+            @apply bg-red-800;
         }
     }
 

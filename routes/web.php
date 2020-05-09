@@ -22,9 +22,13 @@ Route::get('/', 'LandingController@landing');
 
 // Authenticated routes
 Route::middleware('auth')->group(function () {
-    Route::livewire('/journal', 'account.journal')->layout('layouts.app')->section('content');
+    Route::livewire('/journal', 'account.journal')->layout('layouts.app')->section('content')->name('journal');
 
-    Route::livewire('/settings', 'account.settings')->layout('layouts.app')->section('content');
+    Route::livewire('/settings', 'account.settings')->layout('layouts.app')->section('content')->name('settings');
+
+    Route::livewire('/delete-account', 'account.delete')->layout('layouts.app')->section('content')->name('delete-account');
+
+    Route::get('/json-export', 'AccountController@jsonExport')->name('json-export');
 
     Route::post('/bullets', 'BulletController@store')->name('bullet.store');
 

@@ -93297,6 +93297,7 @@ FONTS
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: 'JetBrains Mono';
+  line-height: 1.33rem;
 }
 
 /*
@@ -93463,6 +93464,18 @@ BUTTONS
   --bg-opacity: 1;
   background-color: #276749;
   background-color: rgba(39, 103, 73, var(--bg-opacity));
+}
+
+.button.red {
+  --bg-opacity: 1;
+  background-color: #fc8181;
+  background-color: rgba(252, 129, 129, var(--bg-opacity));
+}
+
+.button.red:hover {
+  --bg-opacity: 1;
+  background-color: #9b2c2c;
+  background-color: rgba(155, 44, 44, var(--bg-opacity));
 }
 
 .button.input-action {

@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/bullets', 'BulletController@index')->name('api.bullet.index');
 
+Route::get('/bullets/{id}', 'BulletController@show')->name('api.bullet.show');
+
 Route::post('/bullets', 'BulletController@store')->name('api.bullet.store');
 
 Route::patch('/bullets/{id}', 'BulletController@update')->name('api.bullet.update');

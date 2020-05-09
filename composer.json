@@ -7,12 +7,18 @@
         "laravel"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "url": "https://github.com/Tahul/laravel-keyable",
+            "type": "git"
+        }
+    ],
     "require": {
         "php": "^7.4",
         "ext-json": "*",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
-        "givebutter/laravel-keyable": "^1.0",
+        "givebutter/laravel-keyable": "dev-master",
         "guzzlehttp/guzzle": "^6.3",
         "jamesmills/laravel-timezone": "^1.9",
         "laravel/framework": "^7.0",

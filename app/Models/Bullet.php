@@ -51,6 +51,13 @@ class Bullet extends Model
     public static function messages()
     {
         return [
+            'index' => [
+                'success' => '📓 Here is your journal.'
+            ],
+            'index' => [
+                'success' => '📓 Here is your bullet.',
+                'error' => '❌ Could not find this bullet.'
+            ],
             'create' => [
                 'success' => '✅ Bullet saved!',
                 'error' => '❌ Could not save bullet.'
