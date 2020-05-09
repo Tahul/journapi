@@ -24,3 +24,18 @@ document.addEventListener("turbolinks:load", function () {
 window.removeAlert = () => {
     document.querySelector('#alert').remove()
 }
+
+/**
+ * Check if we can close the edit pannel or not
+ *
+ * @param id
+ */
+window.closeEdit = ($el, $event) => {
+    if (!$el.querySelector('textarea').value || $el.querySelector('textarea').value === '') {
+        $event.preventDefault();
+        return;
+    } else {
+        $el.setAttribute('x-data', JSON.stringify({edit: false}))
+    }
+
+}

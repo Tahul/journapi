@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Observers/BulletObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Bullet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/bullet.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/alerts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Journal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Account/Settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/journal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/alert.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/bullet.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,9 +175,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/resources/views/livewire" />
+      <recent name="$PROJECT_DIR$/resources/views/partials" />
       <recent name="$PROJECT_DIR$/public/save.svg" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/app/Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -190,7 +206,8 @@
       <workItem from="1588630396760" duration="7731000" />
       <workItem from="1588694089547" duration="6268000" />
       <workItem from="1588769630766" duration="43615000" />
-      <workItem from="1588963535827" duration="13557000" />
+      <workItem from="1588963535827" duration="25362000" />
+      <workItem from="1588991033391" duration="6256000" />
     </task>
     <servers />
   </component>
@@ -230,11 +247,16 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588890669533" />
-    <state x="698" y="378" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588974857562">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588993741336">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="698" y="378" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588974857562" />
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588952586533" />
+    <state x="698" y="378" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588980486580" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588993741336" />
+    <state x="748" y="531" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1588993747896">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="748" y="544" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588979708516" />
+    <state x="748" y="531" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588993747896" />
     <state x="803" y="517" key="Create Form Request" timestamp="1588907557487">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -269,11 +291,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588954943865" />
-    <state x="601" y="66" width="934" height="903" key="find.popup" timestamp="1588976972295">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="879" y="284" width="934" height="654" key="find.popup" timestamp="1588994467557">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="601" y="66" width="934" height="903" key="find.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588976972295" />
-    <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953162225" />
+    <state x="601" y="66" width="934" height="903" key="find.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588990930820" />
+    <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588994467557" />
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup" timestamp="1588585601016">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -282,11 +304,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="624" y="284" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588953128582" />
-    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup" timestamp="1588977497792">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1588996763246">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1057.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1588895706456" />
-    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588977497792" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588963349883" />
+    <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588990445994" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588996763246" />
   </component>
 </project>
