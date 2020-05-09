@@ -543,7 +543,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tahul/laravel-keyable",
-                "reference": "9177beb1caecd9fadca518afc2e1634560e604ce"
+                "reference": "53b6d48266587ff74acb83e0da3b68c55c4e49fb"
             },
             "require": {
                 "php": "^7.0"
@@ -581,7 +581,7 @@
                 "php",
                 "rest"
             ],
-            "time": "2020-05-09T16:43:33+00:00"
+            "time": "2020-05-09T16:48:04+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

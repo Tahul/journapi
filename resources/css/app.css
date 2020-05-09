@@ -152,18 +152,20 @@ ALERTS
 LINKS
  */
 .link {
-    @apply relative mb-6 px-3 py-3 rounded-lg text-lg truncate z-50 bg-cover flex items-center cursor-pointer;
+    @apply relative mb-6 px-3 py-3 rounded-lg text-lg truncate z-50 bg-cover flex items-center cursor-pointer border border-indigo-800;
 
     & span {
         @apply z-50 text-white truncate;
     }
 
     & svg {
-        @apply w-4 h-4 mr-3;
+        fill: white;
+        top: -1px;
+        @apply relative block w-4 h-4 mr-3;
     }
 
     &:after {
         content: '';
-        @apply absolute left-0 top-0 block w-full h-full bg-indigo-400 opacity-50 z-10;
+        @apply absolute left-0 top-0 block w-full h-full bg-indigo-600 opacity-50;
     }
 }
