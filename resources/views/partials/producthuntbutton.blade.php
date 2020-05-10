@@ -1,4 +1,4 @@
-<div class="w-full flex items-center justify-center">
+<div class="w-full flex items-center justify-center mb-3">
     <a
         href="https://www.producthunt.com/posts/journapi?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-journapi"
         target="_blank"
