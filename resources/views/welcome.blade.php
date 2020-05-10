@@ -74,6 +74,8 @@
                     The story behind
                 </a>
             </div>
+
+            @include('partials.producthuntbutton')
         </div>
     </div>
 @endsection
