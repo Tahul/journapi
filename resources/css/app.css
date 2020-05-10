@@ -1,13 +1,13 @@
 /*
 IMPORTS
  */
+/* purgecss start ignore */
 @tailwind base;
 
 @tailwind components;
+/* purgecss end ignore */
 
 @tailwind utilities;
-
-@tailwind screens;
 
 /*
 FONTS
@@ -96,6 +96,12 @@ FORMS
 /*
 BUTTONS
  */
+a.button {
+    &:hover {
+        @apply text-white;
+    }
+}
+
 .button {
     @apply transition-colors duration-100 inline-block align-middle text-center select-none border font-bold whitespace-no-wrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-blue-400;
 
@@ -169,3 +175,62 @@ LINKS
         @apply absolute left-0 top-0 block w-full h-full bg-indigo-600 opacity-50;
     }
 }
+
+/**
+HOMEPAGE
+ */
+
+.logo {
+    animation-name: bounce;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.shadow {
+    position: relative;
+    width: 120px;
+    border-radius: 80%;
+    animation-name: shadow;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shadow {
+    from {
+        width: 33%;
+        height: 1rem;
+        opacity: 0.5;
+    }
+    to {
+        width: 66%;
+        height: 0.75rem;
+        opacity: 0.65;
+    }
+}
+
+@keyframes bounce {
+    from {
+        top: -15px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+/**
+PRIVACY
+ */
+.privacy {
+    h3 {
+        @apply font-bold;
+    }
+
+    p {
+        @apply text-sm;
+    }
+}
+

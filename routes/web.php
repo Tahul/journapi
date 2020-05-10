@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 // Public routes
 Auth::routes();
 
-Route::get('/', 'LandingController@landing');
+Route::get('/', 'LandingController@landing')->name('home');
+
+Route::get('/privacy', 'LandingController@privacy')->name('privacy');
 
 // Authenticated routes
 Route::middleware('auth')->group(function () {

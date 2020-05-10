@@ -2,8 +2,7 @@
 
 @section('content')
     <div class="w-full flex items-center justify-center">
-        <div>
-
+        <div class="flex flex-col items-center justify-center">
             <svg
                 class="logo relative w-32 h-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px"
                 height="48px"
@@ -31,52 +30,50 @@
                 <circle cx="31" cy="30" r="2" fill="#80deea" />
             </svg>
 
-            <div class="flex items-center justify-center w-full h-4">
-                <div class="w-1/3 bg-black shadow opacity-50" />
+            <div class="flex items-center justify-center w-1/2 h-4">
+                <div class="bg-black shadow opacity-50 border-4" />
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <h1 class="mt-6 text-xl text-center font-bold">
+                The techie bullet journal
+            </h1>
+
+            <a class="button w-full mt-6" href="{{ route('register') }}">
+                Sign up now
+            </a>
+
+            <div class="mt-6 box w-full">
+                <div class="box-header">
+                    Why ?
+                </div>
+
+                <div class="box-inside">
+                    <p>
+                        As a <b class="text-indigo-400">human</b>, you are having great times and new achievements
+                        everyday.
+                    </p>
+
+                    <p class="mt-3">
+                        Keep <b class="text-indigo-400">log</b> of them the easiest way using Journapi.
+                    </p>
+
+                    <p class="mt-3">
+                        When the hard times comes, use it to reflect on your life and <b class="text-indigo-400">stay
+                            positive</b>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full mt-3 mb-3 flex items-center justify-between text-xs">
+                <a class="block" href="{{ route('privacy') }}">
+                    Privacy policies
+                </a>
+                <a class="block" href="https://yael.dev/posts/journapi">
+                    The story behind
+                </a>
             </div>
         </div>
     </div>
-
-    <style>
-        .logo {
-            animation-name: bounce;
-            animation-duration: 0.9s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: ease-in-out;
-        }
-
-        .shadow {
-            width: 120px;
-            height: 20px;
-            border-radius: 80%;
-            animation-name: shadow;
-            animation-duration: 0.9s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: ease-in-out;
-        }
-
-        @keyframes shadow {
-            from {
-                width: 33%;
-                height: 20px;
-                opacity: 0.5;
-            }
-            to {
-                width: 66%;
-                height: 10px;
-                opacity: 0.8;
-            }
-        }
-
-        @keyframes bounce {
-            from {
-                top: -15px;
-            }
-            to {
-                top: 0px;
-            }
-        }
-    </style>
 @endsection

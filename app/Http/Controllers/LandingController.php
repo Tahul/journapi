@@ -17,4 +17,15 @@ class LandingController extends Controller
     {
         return view('welcome');
     }
+
+    /**
+     * Show the application landing page.
+     *
+     * @param Request $request
+     * @return Response
+     */
+    public function privacy(Request $request)
+    {
+        return view('privacy');
+    }
 }
