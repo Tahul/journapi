@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Bullet;
+use Carbon\Carbon;
 use Exception;
 use Givebutter\LaravelKeyable\Auth\AuthorizesKeyableRequests;
 use Illuminate\Http\JsonResponse;
@@ -86,7 +87,7 @@ class BulletController extends Controller
         try {
             $bullet = Bullet::create([
                 'user_id' => $user->id,
-                'published_at' => Timezone::convertFromLocal(now()),
+                'published_at' => Carbon::parse(now(), $user->timezone)->setTimezone('UTC'),
                 'bullet' => request()->bullet
             ]);
 
