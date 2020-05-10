@@ -23,6 +23,11 @@
                 <p class="mt-3">
                     It is subject to change at any time, and we will notify you about major changes via email.
                 </p>
+
+                <p class="mt-3">
+                    Also, the code of this app and its CLI are <a href="https://github.com/Tahul/journapi">open
+                        source</a>.
+                </p>
             </div>
         </div>
 
@@ -48,9 +53,13 @@
             </p>
 
             <p class="mt-3">
-                The only external service we use is <a
+                The only external services we use are <a
                     href="https://marketingplatform.google.com/about/analytics/terms/us/" target="_blank"
-                >Google Analytics</a>.
+                >Google Analytics</a> and <a
+                    href="https://www.notion.so/Terms-and-Privacy-28ffdd083dc3473e9c2da6ec011b58ac"
+                    target="_blank"
+                >Notion</a>.
+            </p>
             </p>
         </div>
 

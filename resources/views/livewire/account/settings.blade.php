@@ -1,4 +1,4 @@
-<div class="box">
+<div class="mb-6 box">
     <div class="box-header">
         Settings
     </div>
@@ -81,8 +81,12 @@
             @include('partials.recipes')
         </div>
 
-        <div>
+        <div class="mb-6">
             @include('partials.danger-zone')
+        </div>
+
+        <div>
+            @include('partials.buymeacoffee')
         </div>
     </div>
 </div>
