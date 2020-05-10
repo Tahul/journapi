@@ -5,7 +5,7 @@
 
 A bullet journal to log your daily life.
 
-##💻 The stack
+## 💻 The stack
 
 This project was an opportunity for me to discover the [TALL Stack](https://tallstack.dev/).
 
@@ -19,7 +19,7 @@ I recommend you to refer to these libraries / frameworks documentations.
 
 The setup instructions are described on the Laravel documentation.
 
-##🔗 Others links
+## 🔗 Others links
 
 - 🎩 [Alfred Workflow](https://www.notion.so/Journapi-Alfred-workflow-5af3174c7e174b9d8f9a823570dd529b)
 - ⌨️ [The CLI](https://github.com/Tahul/journapi-cli)
