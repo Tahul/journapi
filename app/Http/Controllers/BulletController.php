@@ -87,7 +87,7 @@ class BulletController extends Controller
         try {
             $bullet = Bullet::create([
                 'user_id' => $user->id,
-                'published_at' => Carbon::parse(now(), $user->timezone)->setTimezone('UTC'),
+                'published_at' => now()->timezone($user->timezone),
                 'bullet' => request()->bullet
             ]);
 
