@@ -40,6 +40,12 @@ body {
 
 #app {
     max-width: 320px;
+
+
+    @media screen and (max-width: 320px) {
+        @apply block px-4;
+        clear: both;
+    }
 }
 
 a {

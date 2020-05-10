@@ -1490,6 +1490,15 @@ body {
   max-width: 320px;
 }
 
+@media screen and (max-width: 320px) {
+  #app {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    clear: both
+  }
+}
+
 a {
   transition-property: background-color, border-color, color, fill, stroke;
   transition-duration: 100ms;
@@ -1872,3 +1881,4 @@ PRIVACY
 .privacy p {
   font-size: 0.875rem;
 }
+
