@@ -15,6 +15,20 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" data-turbolinks-track="true" rel="stylesheet">
 
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Journapi">
+    <meta property="og:url" content="https://journapi.app">
+    <meta property="og:image" content="https://journapi.app/images/ogp.png">
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:site" content="@yaeeelglx">
+    <meta name="twitter:description" content="The techie bullet journal">
+    <meta name="twitter:app:name:iphone" content="Journapi">
+    <meta name="twitter:app:name:ipad" content="Journapi">
+    <meta name="twitter:app:name:googleplay" content="Journapi">
+    <meta name="twitter:app:country" content="US">
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
