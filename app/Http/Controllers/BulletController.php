@@ -9,6 +9,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Illuminate\Validation\ValidationException;
+use JamesMills\LaravelTimezone\Facades\Timezone;
 
 class BulletController extends Controller
 {
@@ -85,7 +86,7 @@ class BulletController extends Controller
         try {
             $bullet = Bullet::create([
                 'user_id' => $user->id,
-                'published_at' => now()->timezone($user->timezone),
+                'published_at' => Timezone::convertFromLocal(now()),
                 'bullet' => request()->bullet
             ]);
 

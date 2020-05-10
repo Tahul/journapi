@@ -23,6 +23,25 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Analytics -->
+    @if(!is_null(config('services.analytics.id')))
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id={{ config('services.analytics.id') }}"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', '{{ config('services.analytics.id') }}');
+        </script>
+    @endif
+
     <livewire:styles />
 </head>
 

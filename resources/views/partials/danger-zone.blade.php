@@ -43,8 +43,7 @@
 
         <a
             class="text-sm"
-            href="{{ route('logout') }}"
-            onclick="event.preventDefault(); document.getElementById('delete-form').submit();"
+            href="{{ url('/delete-account') }}"
         >
             Delete my account
         </a>
@@ -52,9 +51,5 @@
 </ul>
 
 <form id="logout-form" class="hidden" action="{{ route('logout') }}" method="POST">
-    {{ csrf_field() }}
-</form>
-
-<form id="delete-form" action="{{ route('delete-account') }}" method="GET">
     {{ csrf_field() }}
 </form>

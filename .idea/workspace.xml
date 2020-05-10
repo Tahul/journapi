@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52c3769-a4c9-44cf-a23b-48145365224c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/link.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BulletController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/bullet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/bullet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/danger-zone.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/danger-zone.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +197,7 @@
       <workItem from="1588991033391" duration="6562000" />
       <workItem from="1589032617176" duration="8950000" />
       <workItem from="1589044386163" duration="6000" />
-      <workItem from="1589044415145" duration="5472000" />
+      <workItem from="1589044415145" duration="8600000" />
     </task>
     <servers />
   </component>
@@ -288,11 +289,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="748" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1588954943865" />
-    <state x="879" y="284" width="934" height="654" key="find.popup" timestamp="1589050388211">
+    <state x="879" y="284" width="934" height="654" key="find.popup" timestamp="1589068758512">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="601" y="66" width="934" height="903" key="find.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588990930820" />
-    <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589050388211" />
+    <state x="879" y="284" width="934" height="654" key="find.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589068758512" />
     <state x="609" y="334" width="700" height="530" key="recent.locations.popup" timestamp="1588585601016">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -301,11 +302,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="624" y="284" width="672" height="677" key="run.anything.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589036876091" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1589054779389">
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1589072751707">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1057.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1588895706456" />
     <state x="623" y="287" width="672" height="666" key="search.everywhere.popup/0.-1057.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1588990445994" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589054779389" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.-1080.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1589072751707" />
   </component>
 </project>
