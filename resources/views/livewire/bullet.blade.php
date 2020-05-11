@@ -135,7 +135,7 @@
                 />
             </svg>
 
-            {{ $bullet->published_at->format('h:i:s') }}
+            {{ $bullet->published_at->format('H:i:s') }}
         </div>
     </div>
 
