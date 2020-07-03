@@ -22,6 +22,14 @@
             wire:model="bulletEdit"
         >{{ $bullet->bullet }}</textarea> <!-- Edit textarea -->
 
+        <input
+            class="mt-2 form-input w-full"
+            max="false"
+            min="false"
+            type="datetime-local"
+            wire:model.lazy="publishedAtEdit"
+        /> <!-- Edit publishedAt -->
+
         @error('bulletEdit')
         <p>
             {{ $message }}

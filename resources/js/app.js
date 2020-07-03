@@ -31,11 +31,11 @@ window.removeAlert = () => {
  * @param id
  */
 window.closeEdit = ($el, $event) => {
+    if (!$el || !$event) return;
+
     if (!$el.querySelector('textarea').value || $el.querySelector('textarea').value === '') {
         $event.preventDefault();
-        return;
     } else {
         $el.setAttribute('x-data', JSON.stringify({edit: false}))
     }
-
 }

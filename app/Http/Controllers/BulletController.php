@@ -85,9 +85,15 @@ class BulletController extends Controller
 
         // Creation
         try {
+            $publishedAt = now()->timezone($user->timezone);
+
+            if (request()->has('published_at')) {
+                $publishedAt = request()->published_at;
+            }
+
             $bullet = Bullet::create([
                 'user_id' => $user->id,
-                'published_at' => now()->timezone($user->timezone),
+                'published_at' => $publishedAt,
                 'bullet' => request()->bullet
             ]);
 
@@ -179,6 +185,10 @@ class BulletController extends Controller
             }
 
             $bullet->bullet = request()->bullet;
+
+            if (request()->has('published_at')) {
+                $bullet->published_at = request()->published_at;
+            }
 
             $bullet->save();
 

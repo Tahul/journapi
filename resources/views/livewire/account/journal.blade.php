@@ -14,11 +14,12 @@
             <img
                 class="w-4 h-4 block transform transition-transform duration-200 rotate-180 ease-in"
                 :class="{ 'rotate-180': visible }" src="/images/chevron.svg"
+                alt="chevron"
             />
         </div>
 
         <div class="box-inside" x-show.transition="visible">
-            <form wire:submit.prevent="submit">
+            <form wire:submit.prevent="submit" novalidate>
                 @include('partials.alerts')
 
                 @csrf
@@ -31,7 +32,15 @@
                         autofocus
                         rows="3"
                         wire:model.lazy="bullet"
-                    ></textarea>
+                    ></textarea> <!-- Edit bullet -->
+
+                    <input
+                        class="form-input w-full mt-2"
+                        max="false"
+                        min="false"
+                        type="datetime-local"
+                        wire:model.lazy="published_at"
+                    /> <!-- Edit published at -->
 
                     @error('bullet')
                     <p>
@@ -53,8 +62,7 @@
     @foreach($bullets as $date => $values)
         <div
             x-data="{ visible: parseInt('{{ $date === now(auth()->user()->timezone)->format('d M y') }}') === 1 }"
-            wire:poll.10000ms
-        > <!-- Polling every 10 seconds so updates from API are reflected -->
+        >
             <h3
                 class="p-3 my-6 w-full bg-indigo-400 rounded-lg font-bold text-white cursor-pointer flex justify-between items-center select-none border-4 border-indigo-400"
                 @click="visible = !visible"
@@ -64,6 +72,7 @@
                 <img
                     class="w-4 h-4 block transform transition-transform duration-200 ease-in rotate-180"
                     :class="{ 'rotate-180': visible }" src="/images/chevron.svg"
+                    alt="chevron"
                 />
             </h3>
 
@@ -71,7 +80,7 @@
                 x-show.transition="visible === true"
             >
                 @foreach($values as $bullet)
-                    <livewire:bullet :bullet="$bullet" :key="$bullet->id">
+                    <livewire:bullet :bullet="$bullet" :key="rand() * $bullet->id">
                 @endforeach
             </div>
         </div>

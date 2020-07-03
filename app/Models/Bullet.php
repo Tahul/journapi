@@ -77,10 +77,12 @@ class Bullet extends Model
     {
         return [
             'create' => [
-                'bullet' => 'required'
+                'bullet' => 'required',
+                'published_at' => 'date_format:Y-m-d\TH:i'
             ],
             'update' => [
-                'bullet' => 'required'
+                'bullet' => 'required',
+                'published_at' => 'date_format:Y-m-d\TH:i'
             ],
         ];
     }
