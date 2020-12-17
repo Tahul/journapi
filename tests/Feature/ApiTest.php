@@ -20,7 +20,7 @@ class ApiTest extends TestCase
 
         $this->baseUrl = env('APP_URL') . '/api';
 
-        $this->user = factory(User::class)->create();
+        $this->user = User::factory()->create();
 
         $this->user->generateApiKey();
     }
@@ -57,7 +57,7 @@ class ApiTest extends TestCase
     /** @test */
     public function it_allows_users_to_show_bullets()
     {
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $this->user->id
         ]);
 
@@ -77,7 +77,7 @@ class ApiTest extends TestCase
     /** @test */
     public function it_blocks_users_to_show_bullets_without_api_key()
     {
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $this->user->id
         ]);
 
@@ -91,9 +91,9 @@ class ApiTest extends TestCase
     /** @test */
     public function it_blocks_users_to_show_other_users_bullets()
     {
-        $secondUser = factory(User::class)->create();
+        $secondUser = User::factory()->create();
 
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $secondUser->id
         ]);
 
@@ -170,7 +170,7 @@ class ApiTest extends TestCase
     /** @test */
     public function it_allows_users_to_update_bullets()
     {
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $this->user->id
         ]);
 
@@ -195,7 +195,7 @@ class ApiTest extends TestCase
     /** @test */
     public function it_validates_bullets_on_user_update()
     {
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $this->user->id
         ]);
 
@@ -223,7 +223,7 @@ class ApiTest extends TestCase
     /** @test */
     public function it_blocks_users_to_update_bullets_without_api_key()
     {
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $this->user->id
         ]);
 
@@ -242,9 +242,9 @@ class ApiTest extends TestCase
     /** @test */
     public function it_blocks_users_to_update_other_users_bullets()
     {
-        $secondUser = factory(User::class)->create();
+        $secondUser = User::factory()->create();
 
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $secondUser->id
         ]);
 
@@ -267,7 +267,7 @@ class ApiTest extends TestCase
     /** @test */
     public function it_allows_users_to_delete_bullets()
     {
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $this->user->id
         ]);
 
@@ -285,7 +285,7 @@ class ApiTest extends TestCase
     /** @test */
     public function it_blocks_users_to_delete_bullets_without_api_key()
     {
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $this->user->id
         ]);
 
@@ -303,9 +303,9 @@ class ApiTest extends TestCase
     /** @test */
     public function it_blocks_users_to_delete_other_users_bullets()
     {
-        $secondUser = factory(User::class)->create();
+        $secondUser = User::factory()->create();
 
-        $bullet = factory(Bullet::class)->create([
+        $bullet = Bullet::factory()->create([
             'user_id' => $secondUser->id
         ]);
 

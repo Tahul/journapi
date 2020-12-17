@@ -1,14 +1,29 @@
 <?php
 
-use App\Models\Bullet;
-use App\Models\User;
-use Faker\Generator as Faker;
-use Illuminate\Database\Eloquent\Factory;
+namespace Database\Factories;
 
-/** @var Factory $factory */
-$factory->define(Bullet::class, function (Faker $faker) {
-    return [
-        'published_at' => now(),
-        'bullet' => $faker->realText(),
-    ];
-});
+use App\Models\Bullet;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class BulletFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Bullet::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'published_at' => now(),
+            'bullet' => $this->faker->realText(),
+        ];
+    }
+}
