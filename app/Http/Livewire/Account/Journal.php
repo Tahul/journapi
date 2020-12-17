@@ -8,8 +8,8 @@ use Livewire\Component;
 class Journal extends Component
 {
     // Attributes
-    public $bullet = null;
-    public $published_at = null;
+    public ?string $bullet = null;
+    public ?string $published_at = null;
     // Listeners
     protected $listeners = ['refresh' => 'render'];
 
@@ -30,7 +30,9 @@ class Journal extends Component
 
         return view('livewire.account.journal', [
             'bullets' => $bullets
-        ]);
+        ])
+            ->extends('layouts.app')
+            ->section('content');
     }
 
     public function submit()

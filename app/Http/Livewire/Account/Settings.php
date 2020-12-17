@@ -15,7 +15,9 @@ class Settings extends Component
 
     public function render()
     {
-        return view('livewire.account.settings');
+        return view('livewire.account.settings')
+            ->extends('layouts.app')
+            ->section('content');
     }
 
     public function mount()

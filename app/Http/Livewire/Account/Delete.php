@@ -8,7 +8,9 @@ class Delete extends Component
 {
     public function render()
     {
-        return view('livewire.account.delete');
+        return view('livewire.account.delete')
+            ->extends('layouts.app')
+            ->section('content');
     }
 
     public function deleteAccount()
