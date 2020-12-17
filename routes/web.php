@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\BulletController;
+use App\Http\Controllers\LandingController;
+use App\Http\Livewire\Account\Delete;
+use App\Http\Livewire\Account\Journal;
+use App\Http\Livewire\Account\Settings;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -18,23 +24,23 @@ use Illuminate\Support\Facades\Route;
 // Public routes
 Auth::routes();
 
-Route::get('/', 'LandingController@landing')->name('home');
+Route::get('/', [LandingController::class, 'landing'])->name('home');
 
-Route::get('/privacy', 'LandingController@privacy')->name('privacy');
+Route::get('/privacy', [LandingController::class, 'privacy'])->name('privacy');
 
 // Authenticated routes
 Route::middleware('auth')->group(function () {
-    Route::livewire('/journal', 'account.journal')->layout('layouts.app')->section('content')->name('journal');
+    Route::get('/journal', Journal::class)->name('journal');
 
-    Route::livewire('/settings', 'account.settings')->layout('layouts.app')->section('content')->name('settings');
+    Route::get('/settings', Settings::class)->name('settings');
 
-    Route::livewire('/delete-account', 'account.delete')->layout('layouts.app')->section('content')->name('delete-account');
+    Route::get('/delete-account', Delete::class)->name('delete-account');
 
-    Route::get('/json-export', 'AccountController@jsonExport')->name('json-export');
+    Route::get('/json-export', [AccountController::class, 'jsonExport'])->name('json-export');
 
-    Route::post('/bullets', 'BulletController@store')->name('bullet.store');
+    Route::post('/bullets', [BulletController::class, 'store'])->name('bullet.store');
 
-    Route::delete('/bullets/{id}', 'BulletController@delete')->name('bullet.delete');
+    Route::delete('/bullets/{id}', [BulletController::class, 'delete'])->name('bullet.delete');
 
-    Route::put('/bullets/{id}', 'BulletController@update')->name('bullet.update');
+    Route::put('/bullets/{id}', [BulletController::class, 'update'])->name('bullet.update');
 });
