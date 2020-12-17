@@ -11,29 +11,38 @@
         {
             "url": "https://github.com/Tahul/laravel-keyable",
             "type": "git"
+        },
+        {
+            "url": "https://github.com/Tahul/laravel-timezone",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/thadbryson/laravel-geoip",
+            "type": "git"
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "ext-json": "*",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "givebutter/laravel-keyable": "dev-master",
-        "guzzlehttp/guzzle": "^6.3",
-        "jamesmills/laravel-timezone": "^1.9",
-        "laravel/framework": "^7.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "jamesmills/laravel-timezone": "dev-master",
+        "laravel/framework": "^8.0",
+        "laravel/ui": "^3.0",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^1.0",
+        "livewire/livewire": "^2.3.5",
         "shweshi/opengraph": "^1.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.7",
-        "facade/ignition": "^2.0",
+        "facade/ignition": "^2.3.6",
         "fzaninotto/faker": "^1.9.1",
-        "laravel-frontend-presets/tailwindcss": "^4.1",
+        "laravel-frontend-presets/tailwindcss": "^4.3.1",
         "mockery/mockery": "^1.3.1",
-        "nunomaduro/collision": "^4.1",
-        "phpunit/phpunit": "^8.5"
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.0"
     },
     "config": {
         "optimize-autoloader": true,
